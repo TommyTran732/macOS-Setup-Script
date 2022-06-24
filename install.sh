@@ -11,4 +11,4 @@ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
 brew install free-gpgmail android-platform-tools
-brew install --cask brave-browser docker element google-drive github ivpn lens visual-studio-code yubikey-manager
+brew install --cask brave-browser docker element google-drive github ivpn lens raspberry-pi-imager visual-studio-code yubico-yubikey-manager
