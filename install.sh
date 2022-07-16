@@ -12,3 +12,4 @@ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 brew tap homebrew/autoupdate
 brew install free-gpgmail android-platform-tools firebase-cli hugo
 brew install --cask android-studio brave-browser cryptomator docker element google-drive github ivpn onlyoffice raspberry-pi-imager visual-studio-code yubico-yubikey-manager wireshark
+brew install --default-names gnu-sed 
