@@ -12,5 +12,5 @@ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
-brew install free-gpgmail butane hugo gnu-sed openssl
-brew install --cask microsoft-edge docker element github mullvadvpn visual-studio-code
+brew install free-gpgmail butane gnu-sed hugo openssl
+brew install --cask microsoft-edge android-studio docker element github mullvadvpn visual-studio-code
