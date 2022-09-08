@@ -6,6 +6,7 @@ echo "gpgconf --launch gpg-agent" >> ~/.zshrc
 echo "export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh" >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/openssl@3/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"' >> ~/.zshrc
 
 #Comment this line out if on Intel Mac
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
