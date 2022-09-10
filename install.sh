@@ -14,7 +14,7 @@ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
 brew install free-gpgmail butane gnu-sed hugo openssl
-brew install --cask microsoft-edge android-studio docker element github mullvadvpn visual-studio-code
+brew install --cask android-studio docker element github microsoft-auto-update microsoft-edge mullvadvpn visual-studio-code
 
 #Add app cleaner
 curl --fail --output /usr/local/bin/app-cleaner.sh https://raw.githubusercontent.com/sunknudsen/privacy-guides/master/how-to-clean-uninstall-macos-apps-using-appcleaner-open-source-alternative/app-cleaner.sh
