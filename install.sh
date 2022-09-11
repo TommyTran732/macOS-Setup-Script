@@ -7,13 +7,15 @@ echo "export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh" >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.zshrc
 echo 'export PATH="$(brew --prefix)/opt/openssl@3/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+echo 'export CPPFLAGS="-I/usr/local/opt/openjdk/include"' >> ~/.zshrc
 
 #Comment this line out if on Intel Mac
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
-brew install butane gnu-sed hugo openssl
+brew install butane gnu-sed hugo java openssl
 brew install --cask android-studio docker element free-gpgmail github microsoft-auto-update microsoft-edge mullvadvpn visual-studio-code
 
 #Add app cleaner
