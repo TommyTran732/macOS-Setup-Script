@@ -9,6 +9,14 @@ echo 'export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"' >> ~/.zshrc
 #Comment this line out if on Intel Mac
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 
+#Comment this line out if you don't have Touch ID
+awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo > /etc/pam.d/sudo
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
-brew install --cask android-studio docker free-gpgmail github mullvadvpn visual-studio-code
+brew install --cask android-studio docker free-gpgmail github ivpn visual-studio-code
+brew install ffmpeg youtube-dl
+
+sudo chmod 400 /Applications/IVPN.app/Contents/Resources/etc/ca.crt
+sudo chmod 400 /Applications/IVPN.app/Contents/Resources/etc/ta.key
+sudo chmod 400 /Applications/IVPN.app/Contents/Resources/etc/dnscrypt-proxy-template.toml
