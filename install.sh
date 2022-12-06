@@ -13,4 +13,4 @@ awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo > /
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
-brew install --cask docker github gpg-suite microsoft-auto-update microsoft-edge mullvadvpn visual-studio-code
+brew install --cask android-platform-tools docker github gpg-suite microsoft-auto-update microsoft-edge mullvadvpn parallels raspberry-pi-imager veracrypt visual-studio-code
