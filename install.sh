@@ -17,5 +17,5 @@ brew install butane hugo nmap
 brew install --cask docker github gpg-suite microsoft-auto-update microsoft-edge parallels protonvpn visual-studio-code
 
 # Verify SSH Fingerprints
-echo "VerifyHostKeyDNS=true" | sudo tee /etc/ssh/ssh_config.d/VerifyHostKeyDNS.conf
-sudo chmod 644 /etc/ssh/ssh_config.d/VerifyHostKeyDNS.conf
+echo "VerifyHostKeyDNS yes" | sudo tee /etc/ssh/ssh_config.d/10-custom.conf
+sudo chmod 644 /etc/ssh/ssh_config.d/10-custom.conf
