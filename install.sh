@@ -9,8 +9,12 @@ echo "export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh" >> ~/.zshrc
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zshrc
 
 #Comment this line out if you don't have Touch ID
-awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo > /etc/pam.d/sudo
+awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo | sudo tee /etc/pam.d/sudo
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
 brew install --cask android-platform-tools docker github gpg-suite microsoft-auto-update microsoft-edge mullvadvpn parallels raspberry-pi-imager veracrypt visual-studio-code
+
+# Verify SSH Fingerprints
+echo "VerifyHostKeyDNS=true" | sudo tee /etc/ssh/ssh_config.d/VerifyHostKeyDNS.conf
+sudo chmod 644 /etc/ssh/ssh_config.d/VerifyHostKeyDNS.conf
