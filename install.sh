@@ -13,7 +13,8 @@ awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo | s
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
-brew install --cask android-platform-tools docker github gpg-suite microsoft-auto-update microsoft-edge mullvadvpn parallels raspberry-pi-imager veracrypt visual-studio-code
+brew install butane hugo nmap
+brew install --cask docker github gpg-suite microsoft-auto-update microsoft-edge parallels protonvpn visual-studio-code
 
 # Verify SSH Fingerprints
 echo "VerifyHostKeyDNS=true" | sudo tee /etc/ssh/ssh_config.d/VerifyHostKeyDNS.conf
