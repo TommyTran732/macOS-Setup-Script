@@ -10,7 +10,7 @@ sudo chmod 644 /etc/ssh/ssh_config.d/10-custom.conf
 #Enable Safari debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu 1
 
+#Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 brew install --cask android-platform-tools chronycontrol github gpg-suite-no-mail microsoft-edge mullvadvpn orbstack visual-studio-code
   
