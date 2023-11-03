@@ -9,7 +9,3 @@ sudo chmod 644 /etc/ssh/ssh_config.d/10-custom.conf
 
 #Enable Safari debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu 1
-
-# Hide the administrator user
-sudo dscl . create /Users/administrator IsHidden 1
-sudo chflags hidden /Users/administrator
