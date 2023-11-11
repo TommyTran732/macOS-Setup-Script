@@ -14,6 +14,6 @@ defaults write com.apple.Safari IncludeInternalDebugMenu 1
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/autoupdate
 brew tap homebrew/cask-versions
-brew install --cask android-platform-tools chronycontrol ffmpeg github gpg-suite-no-mail microsoft-edge mullvadvpn orbstack powershell visual-studio-code yt-dlp
+brew install --cask android-platform-tools chronycontrol github gpg-suite-no-mail microsoft-edge mullvadvpn orbstack powershell visual-studio-code
 brew install gnu-sed
 echo 'PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"' >> /etc/zshrc
