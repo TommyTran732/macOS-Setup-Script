@@ -17,6 +17,10 @@ defaults write com.apple.Safari IncludeInternalDebugMenu 1
 
 #I nstall Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/$(USERS)/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+echo "export HOMEBREW_NO_ANALYTICS=1" >> /etc/zshrc
+export HOMEBREW_NO_ANALYTICS=1
 brew tap homebrew/autoupdate
 brew tap homebrew/cask-versions
 brew install --cask android-platform-tools chronycontrol github gpg-suite-no-mail microsoft-edge mullvadvpn orbstack powershell visual-studio-code
