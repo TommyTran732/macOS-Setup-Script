@@ -1,0 +1,17 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Tommy
+	email = contact@tommytran.io
+	signingkey = 7BB740F4C6E30F43D4076F03555C902A34EC968F
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
