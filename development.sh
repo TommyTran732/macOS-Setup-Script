@@ -23,7 +23,7 @@ echo "export HOMEBREW_NO_ANALYTICS=1" | sudo tee -a /etc/zshrc
 export HOMEBREW_NO_ANALYTICS=1
 brew tap homebrew/autoupdate
 brew tap homebrew/cask-versions
-brew install --cask android-platform-tools chronycontrol github gpg-suite-no-mail microsoft-edge mullvadvpn orbstack powershell visual-studio-code
+brew install --cask android-platform-tools chronycontrol github gpg-suite-no-mail ivpn microsoft-edge orbstack powershell visual-studio-code
 brew install gnu-sed
 echo 'PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"' | sudo tee -a /etc/zshrc
 
