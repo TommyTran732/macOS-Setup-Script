@@ -27,5 +27,9 @@ brew install --cask android-platform-tools chronycontrol github gpg-suite-no-mai
 brew install gnu-sed
 echo 'PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"' | sudo tee -a /etc/zshrc
 
+# Configure chronyd
+curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/etc/chrony.d/chrony.conf | sudo tee /etc/chrony.d/chrony.conf
+sudo chmod 644 /etc/chrony.d/chrony.conf
+
 #Install Rosetta
 softwareupdate --install-rosetta
