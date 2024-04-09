@@ -1,4 +1,5 @@
 #!/bin/zsh
+# shellcheck disable=SC1071
 
 # Comment this line out if you don't have Touch ID
 awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo | sudo tee /etc/pam.d/sudo

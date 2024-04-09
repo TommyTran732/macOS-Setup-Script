@@ -1,3 +1,6 @@
+#!/bin/zsh
+# shellcheck disable=SC1071
+
 echo "gpgconf --launch gpg-agent" >> ~/.zshrc
 echo "export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh" >> ~/.zshrc
 echo "enable-ssh-support" >> ~/.gnupg/gpg-agent.conf
