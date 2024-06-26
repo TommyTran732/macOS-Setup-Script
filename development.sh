@@ -6,7 +6,7 @@ awk 'NR==2 {print "auth       sufficient     pam_tid.so"} 1' /etc/pam.d/sudo | s
 
 # Protect Home
 for user in $(ls /Users | grep -v 'Shared'); do
-sudo chmod 700 /Users/$user
+sudo chmod 700 /Users/"$user"
 done
 
 # Verify SSH Fingerprints
