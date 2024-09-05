@@ -13,9 +13,6 @@ done
 echo "VerifyHostKeyDNS yes" | sudo tee /etc/ssh/ssh_config.d/10-custom.conf
 sudo chmod 644 /etc/ssh/ssh_config.d/10-custom.conf
 
-# Enable Safari debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu 1
-
 umask 022
 
 # Setup Edge Enterprise Policies
