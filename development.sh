@@ -18,9 +18,9 @@ sudo launchctl unload /System/Library/LaunchDaemons/org.cups.cupsd.plist
 sudo launchctl remove /System/Library/LaunchDaemons/org.cups.cupsd.plist
 
 # Firewall rules
-/usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off
-/usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
-/usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/remoted
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/sharingd
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/sshd-keygen-wrapper
