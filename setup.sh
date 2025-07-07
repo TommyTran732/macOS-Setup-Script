@@ -40,3 +40,6 @@ curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main
 curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main/macOS/Preferences/com.microsoft.Edge.plist | sudo tee /Library/Preferences/com.microsoft.Edge.plist
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Library/LaunchDaemons/io.tommytran.prefs.plist | sudo tee /Library/LaunchDaemons/io.tommytran.prefs.plist
 sudo launchctl load -w /Library/LaunchDaemons/io.tommytran.prefs.plist
+
+# Add Edge TCC Reset
+echo 'alias resetedge='\'tccutil reset All com.microsoft.edgemac\''' | sudo tee -a /etc/zshrc
