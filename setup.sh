@@ -20,6 +20,7 @@ sudo launchctl unload /System/Library/LaunchDaemons/org.cups.cupsd.plist
 sudo launchctl remove /System/Library/LaunchDaemons/org.cups.cupsd.plist
 
 # Firewall rules
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
