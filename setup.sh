@@ -24,6 +24,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/local/libexec/remotepairingdeviced
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/remoted
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/bin/python3
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/bin/ruby
@@ -31,7 +32,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/sbin/cupsd
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/sharingd
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/sshd-keygen-wrapper
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/sbin/smbd
-sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setblockall all
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setblockall on
 
 # Setup Edge Enterprise Policies
 sudo mkdir -p '/Library/Tomster Corporation/scripts/' '/Library/Tomster Corporation/prefs/' '/Library/Managed Preferences'
