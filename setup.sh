@@ -44,4 +44,4 @@ curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Libr
 sudo launchctl load -w /Library/LaunchDaemons/io.tommytran.prefs.plist
 
 # Add Edge TCC Reset
-echo 'alias resetedge='\'tccutil reset All com.microsoft.edgemac\''' | sudo tee -a /etc/zshrc
+echo 'alias edgeperms='\'tccutil reset All com.microsoft.edgemac\''' | sudo tee -a /etc/zshrc
