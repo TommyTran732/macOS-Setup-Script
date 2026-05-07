@@ -1,0 +1,6 @@
+#!/bin/zsh
+# shellcheck disable=SC1071
+
+curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main/macOS/Managed%20Preferences/com.microsoft.Edge.plist | sudo tee '/Library/Tomster Corporation/prefs/com.microsoft.Edge.plist'
+sudo cp -r '/Library/Tomster Corporation/prefs/' '/Library/Managed Preferences/'
+curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main/macOS/Preferences/com.microsoft.Edge.plist | sudo tee /Library/Preferences/com.microsoft.Edge.plist
