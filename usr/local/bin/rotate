@@ -6,11 +6,15 @@
 # https://github.com/sunknudsen/guides/tree/da98691fd9e3f4a586ace9a22e939260517ba574/archive/how-to-spoof-mac-address-and-hostname-automatically-at-boot-on-macos
 
 # This fork changes file location and removes the MAC address randomization part since it is handled by macOS now
+# Private Wi-Fi address must be set to "Rotating" for Wi-Fi networks for this to not be privacy theatre
 
 set -e
 set -o pipefail
 
 export LC_CTYPE=C
+
+# Turn off Wi-Fi interface
+networksetup -setairportpower en0 off
 
 # Rotate hostname
 first_name=$(sed "$(jot -r 1 1 2048)q;d" /usr/local/share/first-names.txt | sed -e 's/[^a-zA-Z]//g')
