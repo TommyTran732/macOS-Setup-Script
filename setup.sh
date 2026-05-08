@@ -58,4 +58,3 @@ sudo chmod 644 /usr/local/share/first-names.txt
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/rotate | sudo tee /usr/local/bin/rotate
 sudo chmod 755 /usr/local/bin/rotate
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Library/LaunchDaemons/io.tommytran.hostname.plist | sudo tee /Library/LaunchDaemons/io.tommytran.hostname.plist
-sudo launchctl enable /Library/LaunchDaemons/io.tommytran.prefs.plist
