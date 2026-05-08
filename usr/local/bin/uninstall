@@ -6,6 +6,7 @@
 # https://github.com/sunknudsen/guides/blob/da98691fd9e3f4a586ace9a22e939260517ba574/archive/how-to-clean-uninstall-macos-apps-using-appcleaner-open-source-alternative/app-cleaner.sh
 
 # This fork simply renames the file and adds tccutil reset
+# Terminal must have full disk access
 
 if [ -z "$1" ] || [ "$1" = "--help" ]; then
   printf "%s\n" "Usage: uninstall /path/to/app.app"
