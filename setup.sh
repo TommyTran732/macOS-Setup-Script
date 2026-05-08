@@ -43,7 +43,9 @@ curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Library/LaunchDaemons/io.tommytran.prefs.plist | sudo tee /Library/LaunchDaemons/io.tommytran.prefs.plist
 sudo launchctl load -w /Library/LaunchDaemons/io.tommytran.prefs.plist
 
-# Add Edge commands
+# Add custom commands
 echo 'alias edgeperms='\'tccutil reset All com.microsoft.edgemac\''' | sudo tee -a /etc/zshrc
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/edgepol | sudo tee /usr/local/bin/edgepol
 sudo chmod 755 /usr/local/bin/edgepol
+curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/uninstall | sudo tee /usr/local/bin/uninstall
+sudo chmod 755 /usr/local/bin/uninstall
