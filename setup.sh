@@ -49,3 +49,11 @@ curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/
 sudo chmod 755 /usr/local/bin/edgepol
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/uninstall | sudo tee /usr/local/bin/uninstall
 sudo chmod 755 /usr/local/bin/uninstall
+
+# Hostname randomization
+sudo mkdir -p /usr/local/share
+sudo chmod 755 /usr/local/share
+curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/share/first-names.txt | sudo tee /usr/local/share/first-names.txt
+sudo chmod 644 /usr/local/share/first-names.txt
+curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/rotate | sudo tee /usr/local/bin/rotate
+sudo chmod 755 /usr/local/bin/rotate

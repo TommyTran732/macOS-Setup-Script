@@ -1,0 +1,23 @@
+#! /bin/sh
+
+# MIT Licensed
+# This is originally created by Sun Knudsen. 
+# At the time of this writing, the script can be found here, but he moves it around from time to time:
+# https://github.com/sunknudsen/guides/tree/da98691fd9e3f4a586ace9a22e939260517ba574/archive/how-to-spoof-mac-address-and-hostname-automatically-at-boot-on-macos
+
+# This fork changes file location and removes the MAC address randomization part since it is handled by macOS now
+
+set -e
+set -o pipefail
+
+export LC_CTYPE=C
+
+# Rotate hostname
+first_name=$(sed "$(jot -r 1 1 2048)q;d" /usr/local/share/first-names.txt | sed -e 's/[^a-zA-Z]//g')
+model_name=$(system_profiler SPHardwareDataType | awk '/Model Name/ {$1=$2=""; print $0}' | sed -e 's/^[ ]*//')
+computer_name="$first_name’s $model_name"
+host_name=$(echo $computer_name | sed -e 's/’//g' | sed -e 's/ /-/g')
+sudo scutil --set ComputerName "$computer_name"
+sudo scutil --set LocalHostName "$host_name"
+sudo scutil --set HostName "$host_name"
+printf "%s\n" "Rotated hostname to $host_name"
