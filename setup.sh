@@ -51,7 +51,7 @@ curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/
 sudo chmod 755 /usr/local/bin/uninstall
 
 # Hostname randomization
-## Counter productive and makes you stick out like a sore thumb 
+## Counter productive and will make you stick out like a sore thumb 
 ## if you do not use "rotating" Private Wi-Fi address
 sudo mkdir -p /usr/local/share
 sudo chmod 755 /usr/local/share
