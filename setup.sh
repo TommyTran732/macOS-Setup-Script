@@ -44,7 +44,8 @@ curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Libr
 sudo launchctl load -w /Library/LaunchDaemons/io.tommytran.prefs.plist
 
 # Add custom commands
-echo 'alias edgeperms='\'tccutil reset All com.microsoft.edgemac\''' | sudo tee -a /etc/zshrc
+curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/edgeperms | sudo tee /usr/local/bin/edgeperms
+sudo chmod 755 /usr/local/bin/edgeperms
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/edgepol | sudo tee /usr/local/bin/edgepol
 sudo chmod 755 /usr/local/bin/edgepol
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/uninstall | sudo tee /usr/local/bin/uninstall

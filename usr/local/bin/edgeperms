@@ -1,0 +1,4 @@
+#!/bin/zsh
+# shellcheck disable=SC1071
+
+tccutil reset All com.microsoft.edgemac
