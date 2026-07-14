@@ -34,7 +34,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/libexec/ssh
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --blockapp /usr/sbin/smbd
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setblockall on
 
-# Setup Edge Enterprise Policies
+# Setup Edge & Office Enterprise Policies
 sudo mkdir -p '/Library/Tomster Corporation/scripts/' '/Library/Tomster Corporation/prefs/' '/Library/Managed Preferences'
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Library/Tomster%20Corporation/scripts/apply_prefs.sh | sudo tee '/Library/Tomster Corporation/scripts/apply_prefs.sh'
 sudo chmod 744 '/Library/Tomster Corporation/scripts/apply_prefs.sh'
