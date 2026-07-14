@@ -50,6 +50,8 @@ curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/
 sudo chmod 755 /usr/local/bin/edgeperms
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/edgepol | sudo tee /usr/local/bin/edgepol
 sudo chmod 755 /usr/local/bin/edgepol
+curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/officepol | sudo tee /usr/local/bin/officepol
+sudo chmod 755 /usr/local/bin/officepol
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/usr/local/bin/uninstall | sudo tee /usr/local/bin/uninstall
 sudo chmod 755 /usr/local/bin/uninstall
 

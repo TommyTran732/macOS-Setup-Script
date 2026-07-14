@@ -1,0 +1,6 @@
+#!/bin/zsh
+# shellcheck disable=SC1071
+
+curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Office-Policies/main/macOS/Managed%20Preferences/com.microsoft.office.plist | sudo tee '/Library/Tomster Corporation/prefs/com.microsoft.office.plist'
+curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Office-Policies/main/macOS/Managed%20Preferences/com.microsoft.autoupdate2.plist | sudo tee '/Library/Tomster Corporation/prefs/com.microsoft.autoupdate2.plist'
+sudo cp -r '/Library/Tomster Corporation/prefs/' '/Library/Managed Preferences/'
