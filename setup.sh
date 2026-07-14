@@ -40,6 +40,8 @@ curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Libr
 sudo chmod 744 '/Library/Tomster Corporation/scripts/apply_prefs.sh'
 curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main/macOS/Managed%20Preferences/com.microsoft.Edge.plist | sudo tee '/Library/Tomster Corporation/prefs/com.microsoft.Edge.plist'
 curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Edge-Policies/main/macOS/Preferences/com.microsoft.Edge.plist | sudo tee /Library/Preferences/com.microsoft.Edge.plist
+curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Office-Policies/main/macOS/Managed%20Preferences/com.microsoft.office.plist | sudo tee '/Library/Tomster Corporation/prefs/com.microsoft.office.plist'
+curl https://raw.githubusercontent.com/TommyTran732/Microsoft-Office-Policies/main/macOS/Managed%20Preferences/com.microsoft.autoupdate2.plist | sudo tee '/Library/Tomster Corporation/prefs/com.microsoft.autoupdate2.plist'
 curl https://raw.githubusercontent.com/TommyTran732/macOS-Setup-Script/main/Library/LaunchDaemons/io.tommytran.prefs.plist | sudo tee /Library/LaunchDaemons/io.tommytran.prefs.plist
 sudo launchctl load -w /Library/LaunchDaemons/io.tommytran.prefs.plist
 
