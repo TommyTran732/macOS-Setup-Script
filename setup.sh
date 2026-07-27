@@ -10,7 +10,7 @@ sudo chmod 700 /Users/"$user"
 done
 
 # Verify SSH Fingerprints
-echo "VerifyHostKeyDNS yes" | sudo tee /etc/ssh/ssh_config.d/10-custom.conf
+echo "VerifyHostKeyDNS ask" | sudo tee /etc/ssh/ssh_config.d/10-custom.conf
 sudo chmod 644 /etc/ssh/ssh_config.d/10-custom.conf
 
 umask 022
